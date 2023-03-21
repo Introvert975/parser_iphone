@@ -3,7 +3,7 @@ import requests  # импортируем библиотеку requests
 
 def parse():
     price_list = []
-    page_nums = 1
+    page_nums = int(input()) # Ввод кол-ва страниц
     for page in range(page_nums):
 
         url = 'https://kcentr.ru/catalog/smartfony/proizvoditel=apple/?page=' + str(page)
